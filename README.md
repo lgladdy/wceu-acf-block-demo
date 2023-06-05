@@ -15,5 +15,6 @@ This is a demo ACF block as a plugin which contains it's own fields and utilises
     - This is the core plugin file which registers our block, and adds the hook to `acf/include_fields` to load our field JSON. This also registers `slick` as a script, so we can reference it as a dependency in our `assets/slider.js` file (via `assets/slider.asset.php`).
 - /block.json
     - This is the core block.json file which contains the block definition, ACF specific options, and supported features.
+    - As this block uses a third party library, and doesn't support `<InnerBlocks />` we also disable JSX support to bring better compatibility with slick's reinitialisation.
 - /slider-template.php
     - This is the PHP template which renders the fields and all associated HTML on both the admin and front-end. A specific `$is_preview` switch ensures we only output our debug text in the admin views.
