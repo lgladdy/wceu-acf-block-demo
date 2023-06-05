@@ -12,7 +12,7 @@ This is a demo ACF block as a plugin which contains it's own fields and utilises
 - /slick/*
     - This is the third party slick library from [Ken Wheeler](https://github.com/kenwheeler/slick).
 - /acf-slider-block.php
-    - This is the core plugin file which registers our block, and adds the hook to `acf/include_fields` to load our field JSON. This also registers `slick` as a script, so we can reference it as a dependency in our `assets/slider.js` file (via `assets/slider.asset.php`0).
+    - This is the core plugin file which registers our block, and adds the hook to `acf/include_fields` to load our field JSON. This also registers `slick` as a script, so we can reference it as a dependency in our `assets/slider.js` file (via `assets/slider.asset.php`).
 - /block.json
     - This is the core block.json file which contains the block definition, ACF specific options, and supported features.
 - /slider-template.php
