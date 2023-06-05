@@ -13,7 +13,8 @@
     },
     "supports": {
         "mode": false,
-        "__experimentalBorder": true
+        "__experimentalBorder": true,
+        "jsx": false
     },
     "align": "full"
 }

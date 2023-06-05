@@ -12,7 +12,7 @@ function acfRenderSliderBlock(block) {
     // Because React will reuse DOM elements where possible, the previously initialised slider might still be active, check for that before init to prevent errors.
     if (el.slick) {
         jQuery(el).slick('unslick');
-    }s
+    }
     jQuery(el).slick({
         dots: true
     });
