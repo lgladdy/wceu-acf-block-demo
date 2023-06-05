@@ -6,7 +6,7 @@ This is a demo ACF block as a plugin which contains it's own fields and utilises
 
 - /assets/*
     - This contains the block specific js and css files, along with the the `.asset.php` file which contains the dependencies and version data for the JS file, as defined by [WPDefinedAsset](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#wpdefinedasset).
-    - Our `slider.js` file hooks into the `render_block_preview/type=slider` ACF JS action to ensure we initialise the slick library correctly at the right time.
+    - Our `slider.js` file hooks into the `render_block_preview/type=slider` ACF JS action to ensure we initialise the slick library correctly at the right time - we also handle destroying and reinitialising slick whenever the slide content changes in the admin.
 - /fields/*
     - This contains one file containing our field definitions. This is based on a field group exported from ACF's admin pages, but with the location rules removed as we add them to ensure they apply to this block in the `acf-slider-block.php` file in the root.
 - /slick/*
