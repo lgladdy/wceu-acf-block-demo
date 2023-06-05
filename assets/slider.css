@@ -1,0 +1,25 @@
+/* Any custom CSS for the block should live in here */
+.acf-slider-admin-only {
+    display: none;    
+}
+.wp-admin .acf-slider-admin-only {
+    display: block;
+    color: #999;
+    font-style: italic;
+}
+.slick-prev:before, .slick-next:before {
+    color: orange;
+}
+.slick-slide {
+    position: relative;
+}
+.slick-slide h3 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0.5rem;
+    left: 1rem;
+}
+.slick-slide img {
+    width: 100%;
+}

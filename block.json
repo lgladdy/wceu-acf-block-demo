@@ -1,0 +1,19 @@
+{
+    "name": "acf/slider",
+    "title": "Slider",
+    "description": "A custom slider block.",
+    "style": [ "file:./slick/slick.css", "file:./slick/slick-theme.css", "file:./assets/slider.css" ],
+    "script": "file:./assets/slider.js",
+    "category": "formatting",
+    "icon": "images-alt2",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "slider-template.php",
+        "blockVersion": 2
+    },
+    "supports": {
+        "mode": false,
+        "__experimentalBorder": true
+    },
+    "align": "full"
+}
